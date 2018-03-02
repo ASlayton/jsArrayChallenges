@@ -2,28 +2,28 @@ console.log("Hello");
 
 // CHALLENGE 1
 
-// var challengeOneInput = "jumbo shrimp";
-// var SchallengeOneInput = challengeOneInput.split(" ");
-// var input1 = SchallengeOneInput[0].split("");
-// var input2 = SchallengeOneInput[1].split("");
-// var score1;
-// var score2;
+var challengeOneInput = "jumbo shrimp";
+var SchallengeOneInput = challengeOneInput.split(" ");
+var input1 = SchallengeOneInput[0].split("");
+var input2 = SchallengeOneInput[1].split("");
+var score1;
+var score2;
+var challenge1Element = document.getElementById("challenge-1");
+for(var i = 0; i < input1.length; i++){
+  score1 += input1[i].charCodeAt();
+};
 
-// for(var i = 0; i < input1.length; i++){
-//   score1 += input1[i].charCodeAt();
-// };
+for(var j = 0; i < input2.length; i++){
+  score2 += input2[i].charCodeAt();
+};
 
-// for(var j = 0; i < input2.length; i++){
-//   score2 += input2[i].charCodeAt();
-// };
-
-// if (score1 > score2){
-//   document.getElementById("challenge-1").innerHTML("<h1>" + input1 + "</h1>");
-//   console.log(input1.join(""));
-// }else {
-//   document.getElementById("challenge-1").innerHTML("<h1>" + input2 + "</h1>");
-//   console.log(input2.join(""));
-// };
+if (score1 > score2){
+  challenge1Element.innerHTML = ("<h1>" + input1.join("") + "</h1>");
+  console.log(input1.join(""));
+}else {
+  challenge1Element.innerHTML = ("<h1>" + input2.join("") + "</h1>");
+  console.log(input2.join(""));
+};
 
 // CHALLENGE 2
 // var challengeTwoInputA = [1,2,3,4,5,6,3,8,9];
@@ -53,7 +53,7 @@ console.log(minInput);
 
 for(var i = 0; i < challengeThreeInputA; i++){
   if (maxInput === challengeThreeInputA[i]){
-    var exists += 1;
+    var exists = 1;
   };
 };
 
