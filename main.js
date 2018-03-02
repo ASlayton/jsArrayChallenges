@@ -45,26 +45,26 @@
 
 
 // CHALLENGE 3
-var theArray = [1,1,1,1,2,1,1,1];
-var maxArray = Math.max.apply(Math, theArray);
+// var theArray = [1,1,1,1,2,1,1,1];
+// var maxArray = Math.max.apply(Math, theArray);
 
-var minArray = Math.min.apply(Math, theArray);
+// var minArray = Math.min.apply(Math, theArray);
 
-var countMeMax = 0;
-var countMeMin = 0;
-for(var i = 0; i < theArray.length; i++){
-  if(maxArray === theArray[i]){
-    countMeMax += 1;
-  }else if (minArray === theArray[i]){
-    countMeMin += 1;
-  };
-};
+// var countMeMax = 0;
+// var countMeMin = 0;
+// for(var i = 0; i < theArray.length; i++){
+//   if(maxArray === theArray[i]){
+//     countMeMax += 1;
+//   }else if (minArray === theArray[i]){
+//     countMeMin += 1;
+//   };
+// };
 
-if(countMeMax > countMeMin){
-  document.getElementById("challenge-3").innerHTML = minArray;
-}else{
-  document.getElementById("challenge-3").innerHTML = maxArray;
-};
+// if(countMeMax > countMeMin){
+//   document.getElementById("challenge-3").innerHTML = minArray;
+// }else{
+//   document.getElementById("challenge-3").innerHTML = maxArray;
+// };
 
 
 // CHALLENGE 4
@@ -75,4 +75,19 @@ if(countMeMax > countMeMin){
 // }
 // console.log(challengeFourInputA);
 
-
+// CHALLENGE 5
+var array1 = [1,2,4,7,5,9,2,7,3,6,4];
+var array2 = [5,9,2];
+var matches = [];
+for(var i = 0; i < array1.length; i++){
+  for (var j = 0; j < array2.length; j++){
+    if(array1[i] === array2[j]){
+      array1[i] = "";
+    };
+  };
+};
+array1 = array1.join("").split("");
+for(var n = 0; n < array1.length; n++){
+  array1[n] = array1[n] * 1;
+};
+document.getElementById("challenge-5").innerHTML = array1;
