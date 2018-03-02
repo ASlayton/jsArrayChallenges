@@ -76,18 +76,36 @@
 // console.log(challengeFourInputA);
 
 // CHALLENGE 5
-var array1 = [1,2,4,7,5,9,2,7,3,6,4];
-var array2 = [5,9,2];
-var matches = [];
-for(var i = 0; i < array1.length; i++){
-  for (var j = 0; j < array2.length; j++){
-    if(array1[i] === array2[j]){
-      array1[i] = "";
-    };
+// var array1 = [1,2,4,7,5,9,2,7,3,6,4];
+// var array2 = [5,9,2];
+// var matches = [];
+// for(var i = 0; i < array1.length; i++){
+//   for (var j = 0; j < array2.length; j++){
+//     if(array1[i] === array2[j]){
+//       array1[i] = "";
+//     };
+//   };
+// };
+// array1 = array1.join("").split("");
+// for(var n = 0; n < array1.length; n++){
+//   array1[n] = array1[n] * 1;
+// };
+// document.getElementById("challenge-5").innerHTML = array1;
+
+
+// CHALLENGE 6
+var test1 = [1,3]; // 2
+var test2 = [2,3,4]; // 1
+var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+var minNum = 1;
+var maxNum = test3.length + 1;
+
+for(var i = 1; i < maxNum; i++){
+  if (test3.toString().includes(i)){
+
+  }else{
+    var missingAnimal = i;
+    break;
   };
 };
-array1 = array1.join("").split("");
-for(var n = 0; n < array1.length; n++){
-  array1[n] = array1[n] * 1;
-};
-document.getElementById("challenge-5").innerHTML = array1;
+document.getElementById("challenge-6").innerHTML = i;
