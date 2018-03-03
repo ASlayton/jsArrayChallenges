@@ -128,7 +128,7 @@ for(var j = 1; j < beggers.length; j++){
 };
 
 for(var m = 0; m < beggers.length; m++){
-  console.log(document.getElementById('challenge-7').innerHTML += "<h1>" + beggers[m] + "</h1>");
+  console.log(document.getElementById('challenge-7').innerHTML += "<h1>" + beggers[m].bucket + "</h1>");
 };
 
 
