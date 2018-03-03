@@ -111,13 +111,25 @@
 // document.getElementById("challenge-6").innerHTML = i;
 
 // CHALLENGE 8
-var test1 = 6815; // Display = '2-7-4'
-var arr1 = test1.toString().split("");
+// var test1 = 6815; // Display = '2-7-4'
+// var arr1 = test1.toString().split("");
 
-for (var i=1;i<arr1.length-1;i++){
-  if((arr1[i] % 2) > 0){
-    arr1[i] = "-" + arr1[i] +"-";
-  };
+// for (var i=1;i<arr1.length-1;i++){
+//   if((arr1[i] % 2) > 0){
+//     arr1[i] = "-" + arr1[i] +"-";
+//   };
+// };
+// arr1 = arr1.join("");
+// document.getElementById("challenge-8").innerHTML = arr1;
+
+// CHALLENGE 9
+myPhoneArr = [6,1,5,5,7,1,3,4,9,8];
+function myPhone(x){
+  var phoneArray = x;
+  phoneNumberFirst = "(" + phoneArray[0].toString() +phoneArray[1].toString() + phoneArray[2].toString() + ") ";
+  phoneNumberSecond = phoneArray[3].toString() + phoneArray[4].toString() + phoneArray[5].toString();
+  phoneNumberThird = phoneArray[6].toString() + phoneArray[7].toString() + phoneArray[8].toString() + phoneArray[9].toString();
+  phoneNumber = phoneNumberFirst + phoneNumberSecond + "-" + phoneNumberThird;
+  return phoneNumber;
 };
-arr1 = arr1.join("");
-document.getElementById("challenge-8").innerHTML = arr1;
+document.getElementById("challenge-9").innerHTML = myPhone(myPhoneArr);
