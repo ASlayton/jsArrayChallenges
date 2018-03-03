@@ -1,0 +1,17 @@
+img {
+  height: 50px;
+}
+#challenge-10{
+  margin: auto;
+}
+
+.pin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.hiddenPic {
+  visibility: hidden;
+}

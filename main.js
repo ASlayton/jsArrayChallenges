@@ -61,9 +61,9 @@
 // };
 
 // if(countMeMax > countMeMin){
-//   document.getElementById("challenge-3").innerHTML = minArray;
+//   document.getElementById("challenge-3").innerHTML = "<h1>" + minArray + "</h1>";
 // }else{
-//   document.getElementById("challenge-3").innerHTML = maxArray;
+//   document.getElementById("challenge-3").innerHTML = "h1" + maxArray + "</h1>";
 // };
 
 
@@ -73,7 +73,7 @@
 // for (var i = 0; i < challengeFourInputA.length; i++){
 //   challengeFourInputA[i] = challengeFourInputA[i] * 2;
 // }
-// console.log(challengeFourInputA);
+// document.getElementById().innerHTML = "<h1>"+(challengeFourInputA)+ "</h1>";
 
 // CHALLENGE 5
 // var array1 = [1,2,4,7,5,9,2,7,3,6,4];
@@ -123,13 +123,31 @@
 // document.getElementById("challenge-8").innerHTML = arr1;
 
 // CHALLENGE 9
-myPhoneArr = [6,1,5,5,7,1,3,4,9,8];
-function myPhone(x){
-  var phoneArray = x;
-  phoneNumberFirst = "(" + phoneArray[0].toString() +phoneArray[1].toString() + phoneArray[2].toString() + ") ";
-  phoneNumberSecond = phoneArray[3].toString() + phoneArray[4].toString() + phoneArray[5].toString();
-  phoneNumberThird = phoneArray[6].toString() + phoneArray[7].toString() + phoneArray[8].toString() + phoneArray[9].toString();
-  phoneNumber = phoneNumberFirst + phoneNumberSecond + "-" + phoneNumberThird;
-  return phoneNumber;
+// myPhoneArr = [6,1,5,5,7,1,3,4,9,8];
+// function myPhone(x){
+//   var phoneArray = x;
+//   phoneNumberFirst = "(" + phoneArray[0].toString() +phoneArray[1].toString() + phoneArray[2].toString() + ") ";
+//   phoneNumberSecond = phoneArray[3].toString() + phoneArray[4].toString() + phoneArray[5].toString();
+//   phoneNumberThird = phoneArray[6].toString() + phoneArray[7].toString() + phoneArray[8].toString() + phoneArray[9].toString();
+//   phoneNumber = phoneNumberFirst + phoneNumberSecond + "-" + phoneNumberThird;
+//   return phoneNumber;
+// };
+// document.getElementById("challenge-9").innerHTML = myPhone(myPhoneArr);
+
+
+
+//CHALLENGE 10
+var pinArray = ["pin1","pin2","pin3","pin4","pin5","pin6","pin7","pin8","pin9","pin10"];
+var pinsToRemove = [];
+var strPinsToRemove=[];
+for(var i = 0; i < pinsToRemove.length; i++){
+  pinsToRemove[i] = "pin" + pinsToRemove[i];
 };
-document.getElementById("challenge-9").innerHTML = myPhone(myPhoneArr);
+
+for(var j = 0; j < pinsToRemove.length; j++){
+  for (var n = 0; n < pinArray.length; n++){
+    if(pinsToRemove[j] === pinArray[n]){
+      document.getElementById(pinArray[n]).className = "hiddenPic";
+    }
+  };
+};
