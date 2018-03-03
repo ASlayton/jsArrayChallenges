@@ -120,9 +120,17 @@ for(var i = 1; i < numBeggers+1; i++){
   beggers.push("begger" + i);
 };
 
-for(var j = 0; j < beggers.length; j++){
-  
+for(var j = 1; j < beggers.length; j++){
+  for(var n = 0; n < offerings.length; n++)
+    if(offerings[n] % beggers[j] === 0){
+      beggers.bucket += offerings[n];
+    };
 };
+
+for(var m = 0; m < beggers.length; m++){
+  console.log(document.getElementById('challenge-7').innerHTML += "<h1>" + beggers[m] + "</h1>");
+};
+
 
 
 
