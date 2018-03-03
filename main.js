@@ -94,18 +94,30 @@
 
 
 // CHALLENGE 6
-var test1 = [1,3]; // 2
-var test2 = [2,3,4]; // 1
-var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
-var minNum = 1;
-var maxNum = test3.length + 1;
+// var test1 = [1,3]; // 2
+// var test2 = [2,3,4]; // 1
+// var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+// var minNum = 1;
+// var maxNum = test3.length + 1;
 
-for(var i = 1; i < maxNum; i++){
-  if (test3.toString().includes(i)){
+// for(var i = 1; i < maxNum; i++){
+//   if (test3.toString().includes(i)){
 
-  }else{
-    var missingAnimal = i;
-    break;
+//   }else{
+//     var missingAnimal = i;
+//     break;
+//   };
+// };
+// document.getElementById("challenge-6").innerHTML = i;
+
+// CHALLENGE 8
+var test1 = 6815; // Display = '2-7-4'
+var arr1 = test1.toString().split("");
+
+for (var i=1;i<arr1.length-1;i++){
+  if((arr1[i] % 2) > 0){
+    arr1[i] = "-" + arr1[i] +"-";
   };
 };
-document.getElementById("challenge-6").innerHTML = i;
+arr1 = arr1.join("");
+document.getElementById("challenge-8").innerHTML = arr1;
